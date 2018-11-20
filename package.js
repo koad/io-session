@@ -2,7 +2,7 @@ Package.describe({
   name: "pac-reach:meteor-persistent-session",
   version: "0.4.6",
   summary: "Persistently store Session data on the client",
-  git: "https://github.com/cult-of-coders/meteor-persistent-session"
+  git: "https://github.com/pac-reach/meteor-persistent-session"
 });
 
 Package.onUse(function(api) {
