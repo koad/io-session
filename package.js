@@ -1,5 +1,5 @@
 Package.describe({
-  name: "pac-reach:meteor-persistent-session",
+  name: "koad:io-session",
   version: "0.4.6",
   summary: "Persistently store Session data on the client",
   git: "https://github.com/pac-reach/meteor-persistent-session"
