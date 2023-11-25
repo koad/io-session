@@ -1,12 +1,12 @@
 Package.describe({
   name: "koad:io-session",
-  version: "0.4.6",
+  version: "0.5.0",
   summary: "Persistently store Session data on the client",
-  git: "https://github.com/pac-reach/meteor-persistent-session"
+  git: "https://github.com/koad/io-session"
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.11'),
+  api.versionsFrom('2.2');
   api.use(['jquery', 'amplify', 'tracker', 'reactive-dict', 'session', 'underscore', 'ejson']);
   // If `accounts-base` is loaded, we have to make sure that this package is
   // loaded after `accounts-base` is, so we specify `weak: true` here
@@ -21,7 +21,7 @@ Package.onTest(function (api) {
   api.use("random");
   api.use("underscore");
   api.use("reactive-dict"); // we only need this exposed for testing
-  api.use("pac-reach:meteor-persistent-session");
+  api.use("koad:io-session");
 
   // expose for derping around in console
   api.export('PersistentSession', ['client']);
