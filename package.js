@@ -10,7 +10,7 @@ Package.onUse(function(api) {
   api.use(['jquery', 'amplify', 'tracker', 'reactive-dict', 'session', 'underscore', 'ejson']);
   // If `accounts-base` is loaded, we have to make sure that this package is
   // loaded after `accounts-base` is, so we specify `weak: true` here
-  api.use('accounts-base', { weak: true });
+  api.use('accounts-base@2.2.2', { weak: true });
   api.addFiles('lib/persistent_session.js', 'client');
   api.export('PersistentSession', ['client']);
 });
