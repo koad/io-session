@@ -12,6 +12,7 @@ Package.onUse(function(api) {
   // loaded after `accounts-base` is, so we specify `weak: true` here
   api.use('accounts-base@2.2.2', { weak: true });
   api.addFiles('lib/persistent_session.js', 'client');
+  api.export('Session', ['client']);
   api.export('PersistentSession', ['client']);
 });
 
@@ -24,6 +25,7 @@ Package.onTest(function (api) {
   api.use("koad:io-session");
 
   // expose for derping around in console
+  api.export('Session', ['client']);
   api.export('PersistentSession', ['client']);
   api.export('ReactiveDict', ['client']);
 
